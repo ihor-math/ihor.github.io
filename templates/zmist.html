@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Структура курсу</title>
+    <style>
+        body {
+            background-color: #FFF5EE;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .header-box {
+            background-image: url('https://www.transparenttextures.com/patterns/green-fibers.png');
+            background-color: #556B2F;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            color: #FFD700;
+            text-shadow: 1px 1px 3px #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-bottom: 4px solid #2F4F4F;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .module-box {
+            background-color: #E0EEE0;
+            border-left: 8px solid #556B2F;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .module-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .module-box a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #2F4F4F;
+            font-weight: bold;
+            display: block;
+        }
+
+        .module-box a:hover {
+            color: #8B0000;
+        }
+
+        .home-btn {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .home-btn a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background-color: #008080;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .home-btn a:hover {
+            background-color: #006666;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transform: translateY(-3px);
+        }
+
+        .home-btn img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-box">Структура курсу</div>
+
+    <div class="container">
+        <div class="module-box"><a href="/modul1">Змістовий модуль 1. Комплексні числа.</a></div>
+        <div class="module-box"><a href="/modul2">Змістовий модуль 2. Елементи лінійної алгебри.</a></div>
+        <div class="module-box"><a href="/modul3">Змістовий модуль 3. Елементи векторної алгебри.</a></div>
+        <div class="module-box"><a href="/modul4">Змістовий модуль 4. Елементи аналітичної геометрії.</a></div>
+        <div class="module-box"><a href="/modul5">Змістовий модуль 5. Елементи диференціального числення.</a></div>
+        <div class="module-box"><a href="/modul6">Змістовий модуль 6. Елементи інтегрального числення та диференціальних рівнянь.</a></div>
+    </div>
+
+   <div class="home-btn">
+    <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="gold" viewBox="0 0 24 24">
+            <path d="M12 3l10 9h-3v9h-6v-6h-2v6H5v-9H2z"/>
+        </svg>
+        На головну
+    </a>
+</div>
+
+
+</body>
+</html>

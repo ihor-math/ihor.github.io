@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Змістовий модуль 1. Комплексні числа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #2F4F4F 0%, #9ACD32 50%, #D2B48C 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: #2F4F4F;
+            color: #F0E68C;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 32px;
+            font-weight: bold;
+            border-bottom: 4px solid #D2B48C;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(250, 235, 215, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #2F4F4F;
+        }
+
+        ul.objectives {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        ul.objectives li {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+
+        ul.objectives li::before {
+            content: "👉";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 22px;
+            color: #800000;
+        }
+
+        .topics a {
+            display: block;
+            background-color: #F0E68C;
+            color: #2F4F4F;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .topics a:hover {
+            background-color: #DAA520;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .nav-button {
+            display: flex;
+            align-items: center;
+            background-color: #2F4F4F;
+            color: #FFD700;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-button:hover {
+            background-color: #556B2F;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .nav-button svg {
+            margin-right: 8px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 24px;
+                padding: 20px 10px;
+            }
+
+            .intro {
+                font-size: 18px;
+            }
+
+            ul.objectives li {
+                font-size: 16px;
+                padding-left: 35px;
+            }
+
+            .topics a {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+
+            .nav-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Змістовий модуль 1. Комплексні числа
+    </header>
+
+    <main>
+        <div class="intro">У цьому змістовому модулі ви:</div>
+        <ul class="objectives">
+            <li>дізнаєтеся, що таке комплексні числа та як вони поєднують дійсні та уявні частини;</li>
+            <li>ознайомитеся з алгебраїчною формою комплексних чисел, арифметичними операціями над ними та їхнім геометричним представленням;</li>
+            <li>навчитеся знаходити комплексні корені рівнянь;</li>
+            <li>розглянете тригонометричну й показникову форми запису комплексних чисел і навчитеся виконувати дії в цих формах.</li>
+        </ul>
+
+        <div class="topics">
+            <a href="/tema1">Тема 1. Поняття про комплексні числа. Алгебраїчна форма. Арифметичні дії. Геометрична інтерпретація.</a>
+            <a href="/tema2">Тема 2. Тригонометрична форма комплексного числа. Арифметичні дії.</a>
+            <a href="/tema3">Тема 3. Показникова форма комплексного числа. Арифметичні дії.</a>
+        </div>
+
+     <div class="navigation-buttons">
+  <a class="nav-button" href="{{ url_for('zmist') }}">
+    <!-- Іконка зі стрілкою назад -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+      <path d="M15 18l-6-6 6-6"/>
+    </svg>
+    До структури курсу
+  </a>
+
+  <a class="nav-button" href="{{ url_for('home') }}">
+    <!-- Іконка будинку -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+    </svg>
+    На головну
+  </a>
+</div>
+
+
+    </main>
+</body>
+</html>
